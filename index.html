@@ -8,24 +8,34 @@
         section{
             background-color: crimson;
         }
+        h1{
+            color: red;
+            font-size: 25px;
+        }
+        @media screen and (max-width: 400px) {
+            h1{
+                font-size: 20px;
+                font-weight: 900;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1 id="change-text">hello I am Jahid</h1>
+    <!-- <h1 id="change-text">hello I am Jahid</h1>
     <button onclick="document.body.style.backgroundColor = 'red'">click</button>
     <button id="btn">click</button>
     <button id="purple">click</button>
     <button id="green">click</button>
     <button id="black">click</button>
 
-    <!-- <button id="sectionn">green button</button> -->
+     <button id="sectionn">green button</button> 
 
     <button id="sectionn">green button</button>
     <button onclick="document.body.style.backgroundColor = 'aqua'">aqua</button>
     <button id="brown">color</button>
     <button id="chartreuse">color1</button>
     <button id="crimson">color2</button>
-    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeText()">Change Text</button> -->
     <h1 id="raha">Amar girlfriend er Name?</h1>
     <button id="moni">GF</button>
    
@@ -38,7 +48,7 @@
 
         document.getElementById('moni').addEventListener('click', function(){
             const showGf = document.getElementById('raha');
-            showGf.innerText = 'আমার গার্লফ্রেন্ডের নাম ';
+            showGf.innerText = 'আমার গার্লফ্রেন্ডের নাম লিজা।';
         });
     </script>
 </body>
