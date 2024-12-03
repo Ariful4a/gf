@@ -31,6 +31,15 @@
             font-weight: 600;
             cursor: pointer;
         }
+        #im{
+            background-color: chartreuse;
+            border-radius: 10px;
+            padding: 10px 10px;
+            margin: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
         @media screen and (max-width: 400px) {
             h1{
                 font-size: 20px;
@@ -57,6 +66,10 @@
     <button onclick="changeText()">Change Text</button> -->
     <h1 id="raha">Amar girlfriend er Name?</h1>
     <button id="moni">GF</button>
+    <div class="img">
+        <img id="imgs" src="" alt="">
+    </div>
+    <button id="im">image</button>
     <h1 id="bistyb">Amar girlfriend er Name?</h1>
     <button id="bisty">GF</button>
    
@@ -75,6 +88,15 @@
             const showGf = document.getElementById('bistyb');
             showGf.innerText = 'Sohag er গার্লফ্রেন্ডের নাম Bisty';
         });
+
+        document.getElementById('im').addEventListener('click', function(){
+            const img = document.getElementById('imgs');
+            img.src = 'download.jpeg';
+        });
+
+        /* document.getElementById('sectionn').addEventListener('click', function(){
+            document.querySelector('section').style.backgroundColor = 'green';
+        }); */
     </script>
 </body>
 </html>
