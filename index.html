@@ -22,6 +22,15 @@
             cursor: pointer;
             /* transition: transform 0.5s ease-in-out; */
         }
+        #bisty{
+            background-color: chartreuse;
+            border-radius: 10px;
+            padding: 10px 10px;
+            margin: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
         @media screen and (max-width: 400px) {
             h1{
                 font-size: 20px;
@@ -48,6 +57,8 @@
     <button onclick="changeText()">Change Text</button> -->
     <h1 id="raha">Amar girlfriend er Name?</h1>
     <button id="moni">GF</button>
+    <h1 id="bistyb">Amar girlfriend er Name?</h1>
+    <button id="bisty">GF</button>
    
     <script src="js.js"></script>
     <script>
@@ -58,7 +69,11 @@
 
         document.getElementById('moni').addEventListener('click', function(){
             const showGf = document.getElementById('raha');
-            showGf.innerText = 'Aicul hok er গার্লফ্রেন্ডের নাম লিজা।';
+            showGf.innerText = 'Ainul hok er গার্লফ্রেন্ডের নাম লিজা।';
+        });
+        document.getElementById('bisty').addEventListener('click', function(){
+            const showGf = document.getElementById('bistyb');
+            showGf.innerText = 'Sohag er গার্লফ্রেন্ডের নাম Bisty';
         });
     </script>
 </body>
